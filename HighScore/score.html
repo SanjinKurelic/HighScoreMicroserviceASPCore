@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Score management</title>
+</head>
+<body>
+    <h1>Add Score</h1>
+    <form action="http://localhost:55555/api/score/" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <label for="score">Score:</label>
+                </td>
+                <td>
+                    <input id="score" name="score" type="number" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="userID">User id:</label>
+                </td>
+                <td>
+                    <input id="userID" name="userID" type="number" required />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="SPREMI" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

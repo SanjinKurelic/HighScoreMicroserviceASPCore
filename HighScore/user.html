@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>User management</title>
+</head>
+<body>
+    <h1>Add User</h1>
+    <form action="http://localhost:55555/api/user/" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <label for="addName">Name:</label>
+                </td>
+                <td>
+                    <input id="addName" name="name" type="text" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="addCountry">Country:</label>
+                </td>
+                <td>
+                    <input id="addCountry" name="country" type="text" maxlength="2" required />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="SPREMI" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
