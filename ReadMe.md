@@ -8,7 +8,7 @@ Microservice responsable for storing high scores of different players (users). *
 
 Get all users stored on the server:
 
-```json
+```
 GET /user/ HTTP/1.1
 Host: api.example.org
 Content-Type: application/json
@@ -25,7 +25,7 @@ Accept: application/json
 
 Get data form specific user:
 
-```json
+```
 GET /user/{id} HTTP/1.1
 Host: api.example.org
 Content-Type: application/json
@@ -44,7 +44,7 @@ Add new user (name and country). Server response with user id.
 
 **Request:**
 
-```json
+```
 POST /user/ HTTP/1.1
 Host: api.example.org
 Content-Type: application/json
@@ -60,7 +60,7 @@ Accept: application/json
 
 200 ok
 
-```json
+```
 { "id":"userId" }
 ```
 
@@ -70,7 +70,7 @@ Remove user with user id.
 
 **Request:**
 
-```json
+```
 DELETE /user/{id} HTTP/1.1
 Host: api.example.org
 Content-Type: application/json
@@ -89,7 +89,7 @@ Add new score for user (id).
 
 **Request:**
 
-```json
+```
 POST /score HTTP/1.1
 Host: api.example.org
 Content-Type: application/json
@@ -111,7 +111,7 @@ The server can return score list ordered by score. **Biggest score is the first 
 
 **Request:**
 
-```json
+```
 GET /score/ HTTP/1.1
 Host: api.example.org
 Accept: application/json
@@ -121,7 +121,7 @@ Accept: application/json
 
 200 ok
 
-```json
+```
 {
     [
         "score":12, 
@@ -138,7 +138,7 @@ If you wish to get score list for the defined country you can use:
 
 **Request:**
 
-```json
+```
 GET /score/{country} HTTP/1.1
 Host: api.example.org
 Content-Type: application/json
@@ -149,7 +149,7 @@ Accept: application/json
 
 200 ok
 
-```json
+```
 {
     [
         "score":12, 
@@ -168,7 +168,7 @@ Get global position for a player with id.
 
 **Request:**
 
-```json
+```
 GET /score/position/{id} HTTP/1.1
 Host: api.example.org
 Content-Type: application/json
@@ -179,7 +179,7 @@ Accept: application/json
 
 200 ok
 
-```json
+```
 {
     "userPosition":1
 }
@@ -189,7 +189,7 @@ Get local position for a player with id in defining country.
 
 **Request:**
 
-```json
+```
 GET /score/position/{id}/{country} HTTP/1.1
 Host: api.example.org
 Content-Type: application/json
@@ -200,7 +200,7 @@ Accept: application/json
 
 200 ok
 
-```json
+```
 {
     "userPosition":1
 }
